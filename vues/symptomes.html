@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../vues_css/symptomes.css">
+    <title>Page_Symptômes</title>
+</head>
+<body>
+    <header>
+        <div class="div1">
+        <img src="../vues_assets/mama_in_heart-removebg-preview.png" class="icone" alt="logo"> 
+        <span class="mot1">Baby</span><span class="mot2">Mama</span>
+        </div>
+        <div class="div2">
+            <i class="fa-solid fa-circle-user"></i>
+            <span id="Utilisatrice">Utilisatrice</span>
+        </div>
+    </header>
+
+    <div class="main">
+        <div class="sidebar">  
+            <ul>
+                <li><a href="accueil.html"><i class="fa-solid fa-house"></i>Accueil</a></li>
+                <li><a href="symptomes.html"><i class="fa-solid fa-person-running"></i>Symptomes</a></li>
+                <li><a href="rappels.html"><i class="fa-solid fa-bell"></i>Rappels</a></li>
+                <li><a href="journal.html"><i class="fa-solid fa-book-open"></i>Journal</a></li>
+                <li><a href="profil.html"><i class="fa-solid fa-circle-user"></i>Profil</a></li>
+            </ul>
+        </div>  
+ 
+        <div class="content">   
+            <div id="chatbox">
+                <nav class="nav1">
+                    <p>Dites nous comment vous vous sentez aujourdhui.</p>
+                    <i class="fa-solid fa-heart"></i>   
+                </nav>
+                <div id="entree"></div>
+                <div class="saisie">
+                    <textarea type="text" id="message" placeholder="Décrivez vos symptômes ou votre état..."></textarea>
+                    <nav class="nav2">
+                        <button id="envoie">
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                        <button>
+                            <i class="fa-solid fa-microphone"></i>
+                        </button>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../vues_js/symptomes.js"></script>
+</body>
+</html>
