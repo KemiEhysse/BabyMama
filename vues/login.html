@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../vues_css/login.css">
+    <title>Connexion</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="../vues_assets/mama_in_heart-removebg-preview.png" class="icone" alt="logo"> 
+            <span class="mot1">Baby</span><span class="mot2">Mama</span>
+        </nav>
+    </header>
+
+    <div>
+        <img src="../vues_assets/mama_eyes_closed-removebg-preview.png" class="image" alt="illustration">
+    </div>
+
+    <section>
+        <form action="lien_vers_le_fichier_qui_gère_la_connexion" method="post" class="formulaire" id="form">
+            <div>
+                <label for="email">Votre email: </label>
+                <input type="text" name="email" placeholder="email@exemple.com" required id="email">  <!--les name doivent être identiques aux données que le back récupère dans $_POST deh-->
+            </div>
+
+            <div>
+                <label for="mdp">Votre mot de passe: </label>
+                <input type="password" name="mot_de_passe" placeholder="*************" required id="mot_de_passe">
+            </div>
+
+            <a href="#"><button type="submit">Se connecter</button></a> <!--le lien vers l'accueil-->
+            
+            <p><a href="mdpOublié.html"> Mot de passe oublié ?</a></p>   <!--le lien vers la réinitialisation du mdp-->
+            
+            <p><a href="lien_vers_inscription">Pas de compte ? Inscrivez vous.</a></p>
+        </form>
+    </section>
+    <script src="../vues_js/login.js"></script>
+</body>
+</html>
