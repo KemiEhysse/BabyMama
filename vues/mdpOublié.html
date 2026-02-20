@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../vues_css/mdpOublié.css">
+    <title>Mot_De_Passe_Oublie</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="../vues_assets/mama_in_heart-removebg-preview.png" class="icone" alt="logo"> 
+            <span class="mot1">Baby</span><span class="mot2">Mama</span>
+        </nav>
+    </header>
+
+    <form action="chemin_vers_fichier_php_de_forgot_password" method="post" class="form">
+        <div>
+            <label for="email">Veuillez renseigner votre email :</label>
+            <input type="email" name="email" placeholder="email@exemple.com" required> 
+        </div>
+
+        <button type="submit">Envoyer</button>
+    </form>
+</body>
+</html>

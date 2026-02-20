@@ -1,0 +1,96 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: #F9E3F3;
+    color: #6E3D87;
+    min-height: 100vh;
+    padding: 20px 50px;
+}
+
+
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mot1{
+    font-size: 25px;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05);
+    margin-top: 5 px;
+    color: #6E3D87;
+}
+
+.mot2{
+    font-size: 25px;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05);
+    margin-top: 5 px;
+    color: #E170A8;
+}
+
+header nav img{
+    width: 80px;
+    height: auto;
+    mix-blend-mode: multiply;
+}
+
+.form{
+    max-width: 400px;
+    margin: 80px auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(233, 30, 99, 0.1);
+    backdrop-filter: blur(5px);
+}
+
+.form label{
+    display: block;
+    margin-bottom: 8px;
+    color: #e91e63;
+    font-weight: 600;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.form input{
+     width: 90%;
+    padding: 12px 20px;
+    margin-bottom: 20px;
+    border: 2px solid #fce4ec;
+    border-radius: 25px;
+    background-color: white;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+.form input:focus{
+    border-color: #e91e63;
+    box-shadow: 0 0 8px rgba(233, 30, 99, 0.2);
+    transform: scale(1.02);
+}
+
+.form button{
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #e91e63, #ff80ab);
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(233, 30, 99, 0.3);
+    transition: 0.3s;
+}
+
+.form button:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(233, 30, 99, 0.4);
+    filter: brightness(1.1);
+}
+
+
+  
