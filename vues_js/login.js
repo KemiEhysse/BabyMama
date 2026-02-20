@@ -1,6 +1,22 @@
 //on sélectionne le formulaire par son id
 const form = document.querySelector("#form");  
 
+// on lit les paramètres dans l'URL
+const urlParams = new URLSearchParams(window.location.search);
+
+// on vérifie si le paramètre success existe
+const success = urlParams.get('success');
+
+// On sélectionne la div du message
+const messageDiv = document.getElementById('message-success');
+
+if (success === "password_changed") {
+    messageDiv.textContent = "Votre mot de passe a été modifié avec succès. Vous pouvez maintenant vous connecter.";
+    
+    // on nettoye l'URL après affichage 
+    window.history.replaceState({}, document.title, window.location.pathname);
+}
+
 //on écoute la soumission
 form.addEventListener("submit", function(e){
     e.preventDefault();

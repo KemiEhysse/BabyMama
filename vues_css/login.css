@@ -128,3 +128,9 @@ header nav img{
         width: 250px;
     }
 }
+
+.success-message {
+    color: green;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
