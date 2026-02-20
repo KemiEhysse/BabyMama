@@ -1,0 +1,15 @@
+{
+    "name": "hp/baby-mama",
+    "autoload": {
+        "psr-4": {
+            "Hp\\BabyMama\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Jennifer Adjibade",
+            "email": "jennieradjibade@gmail.com"
+        }
+    ],
+    "require": {}
+}
