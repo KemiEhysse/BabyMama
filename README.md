@@ -36,4 +36,4 @@ Le PHP vérifie la date du jour.
 
 Si un rappel est prévu aujourd'hui, il s'affiche en haut du dashboard.php avec une petite icône de cloche 🔔.
 
-En ce qui concerne la répartition c'est envoyé dans le groupe. Je nous souhaite un bon travail à nous toutes. BISOU MOUAH.
+En ce qui concerne la répartition c'est envoyé dans le groupe. Je nous souhaite un bon travail à nous toutes. BISOU MOUAH. 
