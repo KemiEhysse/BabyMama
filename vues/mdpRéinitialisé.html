@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../vues_css/mdpRéinitialisé.css">
+    <title>Réinitialiser_Mot_De_Passe</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="../vues_assets/mama_in_heart-removebg-preview.png" class="icone" alt="logo"> 
+            <span class="mot1">Baby</span><span class="mot2">Mama</span>
+        </nav>
+    </header>
+
+    <form action="chemin_vers_fichier_php_resetPassword" method="post" class="form">
+        <div>
+            <label for="mdp">Entrez votre nouveau mot de passe :</label>
+            <input type="password" name="nouveau_mdp" placeholder="*************" required>
+        </div>
+
+        <div>
+            <label for="mdp">Confirmer ce mot de passe :</label>
+            <input type="password" name="confirm_mdp" placeholder="*************" required>
+        </div>
+
+        <div>
+            <input type="hidden" name="token" id="token">
+        </div>
+
+        <button>Réinitialiser le mot de passe</button>
+    </form>
+    <script src="../vues_js/mdpRéinitialisé.js"></script>
+</body>
+</html>
