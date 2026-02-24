@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BabyMama Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../vues_css/principal.css">
+</head>
+<body>
+
+    <header class="top-bar">
+        <div class="logo">
+            <img src="../vues_assets/img/logobabymama.png" alt="BabyMama Logo" class="logo-heart"> 
+            <span>Baby<span>Mama</span></span>
+        </div>
+        <div class="user">
+            <i class="fa-solid fa-circle-user"></i>
+            <span>Utilisateur</span>
+        </div>
+    </header>
+
+    <div class="container">
+        <aside class="nav-sidebar">
+            <ul>
+                <li class="active"><i class="fa-solid fa-house"></i> Accueil</li>
+                <li><i class="fa-solid fa-person-running"></i> Symptômes</li>
+                <li><i class="fa-solid fa-bell"></i> Rappels</li>
+                <li><i class="fa-solid fa-book-open"></i> Journal</li>
+                <li><i class="fa-solid fa-circle-user"></i> Profil</li>
+            </ul>
+        </aside>
+
+        <main class="content">
+            <div class="hero">
+                <div class="hero-text">
+                    <h1>Bonjour Utilisateur,</h1>
+                    <p>semaine 20 de grossesse</p>
+                </div>
+                <img src="../vues_assets/img/mamanyeuxfermer.png" alt="Femme enceinte" class="hero-img">
+            </div>
+
+            <section class="white-box">
+                <h3>Résumé du jour</h3>
+                
+                <div class="cards-row">
+                    <button class="card-btn">
+                        Symptômes : <strong>2 aujourd'hui</strong>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                    <button class="card-btn">
+                        Rappel du jour
+                        <i class="fa-solid fa-chevron-right"></i>
+                        
+                    </button>
+                </div>
+
+                <div class="alert-msg">
+                    <strong>Alerte :</strong> Douleur intenses . <br> consultté un medecin
+                </div>
+
+                <div class="advice-banner">
+                    <div class="advice-txt">
+                        <h3>Conseil du jour</h3>
+                        <p>Buvez beaucoup d'eau</p>
+                    </div>
+                    <img src="../vues_assets/img/mamanboirel'eau.png" alt="Femme buvant de l'eau" class="advice-img">
+                </div>
+
+                <div class="bottom-actions">
+                    <button class="action-white">Ajouter symptômes</button>
+                    <button class="action-white">Contacter Médecin</button>
+                </div>
+            </section>
+        </main>
+    </div>
+<script src="../vues_js/principal.js"></script>
+</body>
+</html>
