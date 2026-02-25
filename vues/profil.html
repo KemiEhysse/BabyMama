@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BabyMama - Profil</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../vues_css/profil.css">
+</head>
+<body>
+
+    <header class="top-bar">
+        <div class="logo">
+            <img src="images/logo-heart.png" alt="logo" class="logo-heart"> 
+            <span>Baby<span>Mama</span></span>
+        </div>
+        <div class="user-header">
+            <i class="fa-solid fa-circle-user"></i>
+            <span>Utilisateur</span>
+        </div>
+    </header>
+
+    <div class="container">
+        <aside class="nav-sidebar">
+            <ul>
+                <li><i class="fa-solid fa-house"></i> Accueil</li>
+                <li><i class="fa-solid fa-person-running"></i> Symptômes</li>
+                <li><i class="fa-solid fa-bell"></i> Rappels</li>
+                <li><i class="fa-solid fa-book-open"></i> Journal</li>
+                <li class="active"><i class="fa-solid fa-circle-user"></i> Profil</li>
+            </ul>
+        </aside>
+
+        <main class="content">
+            <section class="profile-banner">
+                <div class="profile-main-info">
+                    <img src="images/woman-water.png" alt="avatar" class="avatar-circle">
+                    <div class="text-info">
+                        <h2>Utilisateur</h2>
+                        <p>13 semaines de grossesse</p>
+                    </div>
+                </div>
+                <button class="btn-complete">Completer profil</button>
+            </section>
+
+            <div class="profile-layout">
+                <div class="left-col">
+                    <h3>Mes informations médicales</h3>
+                    <div class="med-cards">
+                        <div class="med-card">
+                            <p class="med-label">Date prévu pour accouchement</p>
+                            <p class="med-value">31 Octobre</p>
+                        </div>
+                        <div class="med-card">
+                            <p class="med-label">Hopital de suivie</p>
+                            <p class="med-value">CNHU de Cotonou</p>
+                        </div>
+                    </div>
+
+                    <h3>Parametres et confidentialités</h3>
+                    <div class="settings-box">
+                        <div class="setting-row">
+                            <i class="fa-solid fa-pen-to-square"></i>
+                            <span>Modifier Profil</span>
+                        </div>
+                        <div class="setting-row">
+                            <i class="fa-solid fa-globe"></i>
+                            <span>Langue: Francais</span>
+                            <i class="fa-solid fa-chevron-down arrow-right"></i>
+                        </div>
+                        <div class="setting-row no-border">
+                            <i class="fa-solid fa-right-from-bracket"></i>
+                            <span>Déconnexion</span>
+                        </div>
+                    </div>
+                </div>
+                 <div class="right-col">
+            <div class="white-frame"> <div class="contacts-card">
+                    <h4>Contacts</h4>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-circle-user"></i>
+                        <span>Médecin</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-circle-user"></i>
+                        <span>Médecin</span>
+                    </div>
+                    <button class="btn-more">Voir plus</button>
+                </div>
+            </div>
+</div>
+                
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>

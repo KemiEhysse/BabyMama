@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BabyMama Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../vues_css/journal.css">
+</head>
+<body>
+
+    <header class="top-bar">
+        <div class="logo">
+            <img src="../vues_assets/img/logobabymama.png" alt="BabyMama Logo" class="logo-heart"> 
+            <span>Baby<span>Mama</span></span>
+        </div>
+        <div class="user">
+            <i class="fa-solid fa-circle-user"></i>
+            <span>Utilisateur</span>
+        </div>
+    </header>
+
+    <div class="container">
+        <aside class="nav-sidebar">
+            <ul>
+                <li class="active"><i class="fa-solid fa-house"></i> Accueil</li>
+                <li><i class="fa-solid fa-person-running"></i> Symptômes</li>
+                <li><i class="fa-solid fa-bell"></i> Rappels</li>
+                <li><i class="fa-solid fa-book-open"></i> Journal</li>
+                <li><i class="fa-solid fa-circle-user"></i> Profil</li>
+            </ul>
+        </aside>
+        <main class="content">
+                <div class="journal-header">
+                    <h2>Journal de grossesse</h2>
+                    <p>Aujourd'hui : 02 février 2026</p>
+                </div>
+
+                <div class="journal-grid">
+                    <section class="notes-container">
+                        <div class="notes-header">
+                            <img src="../vues_assets/img/woman-pregnant.png" alt="femme" class="notes-avatar">
+                            <h3>Notes</h3>
+                        </div>
+                        <div class="notes-body">
+                            <textarea placeholder="Aujourd'hui, je me sens...">Aujourd'hui , je me sens un peu fatiguer ,mais je suis tellement heureuse de sentir mon enfant bouger 🥰 . Hier j'ai été a hôpital pour faire une ecographie .J'ai vu que c'etait des jumeaux garcon et fille .Mon mari etait heureux j'ai hate de l'annoncer a la famille ❤️ donc je serai maman bientot |</textarea>
+                            
+                            <div class="notes-footer">
+                                <div class="media-actions">
+                                    <div class="add-media">
+                                        <i class="fa-solid fa-image"></i>
+                                        <span>( ajouter image )</span>
+                                    </div>
+                                    <div class="add-media">
+                                        <i class="fa-solid fa-microphone"></i>
+                                        <span>( vocal )</span>
+                                    </div>
+                                </div>
+                                <button class="btn-pink-save">Enregistrer</button>
+                            </div>
+                        </div>
+                    </section>
+
+                    <aside class="counter-container">
+                        <h3>Mouvement du bébé</h3>
+                        <div class="circle-progress">
+                            <div class="circle-inner">
+                                <span class="count-number">8</span>
+                                <span class="count-label">mouvements aujourd'hui</span>
+                            </div>
+                            <button class="btn-plus">+</button>
+                        </div>
+
+                        <button class="btn-reset">Réinitialiser</button>
+
+                        <p class="counter-info">
+                            Utiliser ce compteur pour enregistrer chaque fois que vous sentez votre bébé bouger. Viser environ 10 mouvements par jour.
+                        </p>
+                    </aside>
+                </div>
+        </main>
+        
+    </header>
+</body>

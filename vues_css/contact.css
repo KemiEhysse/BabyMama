@@ -1,0 +1,236 @@
+/* --- CONFIG GENERALE --- */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #F9E3F3;
+    color: #6E3D87;
+    overflow-x: hidden;
+}
+
+/* --- HEADER --- */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+}
+.logo { font-size: 26px; font-weight: 700; display: flex; align-items: center; gap: 10px; }
+.logo span span { color: #E170A8; }
+.logo-heart { /* Style pour l'image du coeur */
+    width: 150px; 
+    height: auto;
+}
+.user { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 1.2rem; }
+.user i { font-size: 35px; color: #9B6BB3; }
+
+/* --- LAYOUT --- */
+.container { display: flex; padding: 0 25px 25px; gap: 30px; }
+
+/* --- SIDEBAR --- */
+.nav-sidebar {
+    width: 230px;
+    background: white;
+    border-radius: 35px;
+    padding: 30px 0;
+    height: 550px;
+}
+.nav-sidebar ul { list-style: none; padding: 0; }
+.nav-sidebar li {
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #6E3D87;
+}
+/* Icônes roses */
+.nav-sidebar li i { color: #E170A8; font-size: 1.1rem; width: 25px; }
+
+.nav-sidebar li.active {
+    background: #A776BF;
+    color: white;
+    border-radius: 0 30px 30px 0;
+    margin-right: 20px;
+}
+.nav-sidebar li.active i { color: white; }
+
+
+/* --- MAIN CONTENT & FRAME --- */
+.content {
+    flex: 1;
+}
+
+/* Le grand cadre blanc qui contient tout */
+.white-container {
+    background: white;
+    border-radius: 35px;
+    padding: 30px;
+    display: flex;
+    gap: 20px;
+    min-height: 500px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+}
+
+/* Sections internes (Rose clair) */
+.contacts-section, .suggestions-section {
+    background-color: #FCE4EC; /* Rose très pâle */
+    border-radius: 25px;
+    padding: 20px;
+    position: relative;
+}
+
+.contacts-section { flex: 2; } /* Plus large */
+.suggestions-section { flex: 1; } /* Plus étroit */
+
+h3 {
+    margin-top: 0;
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #6E3D87;
+}
+
+/* --- CARTES CONTACTS --- */
+.contacts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-card, .suggestion-card {
+    background: white;
+    border-radius: 20px;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+
+.contact-avatar i {
+    font-size: 45px;
+    color: #9B6BB3;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-info strong {
+    font-size: 18px;
+    color: #000;
+}
+
+.contact-info span {
+    font-size: 13px;
+    color: #888;
+    margin-top: -2px;
+}
+
+.contact-info p {
+    margin: 5px 0 0 0;
+    font-weight: 700;
+    color: #333;
+    letter-spacing: 1px;
+}
+
+/* --- BOUTON AJOUTER --- */
+.btn-add {
+    background-color: #E170A8;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: 700;
+    font-family: inherit;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    transition: 0.3s;
+}
+
+.btn-add:hover {
+    background-color: #c95d93;
+}
+
+/* --- RESPONSIVE --- */
+
+/* Tablettes */
+@media (max-width: 992px) {
+    .white-container {
+        flex-direction: column;
+    }
+    .contacts-section, .suggestions-section {
+        flex: none;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .btn-add {
+        position: static;
+        margin-top: 20px;
+        float: right;
+    }
+}
+
+/* Mobiles */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+    .nav-sidebar {
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .nav-sidebar ul {
+        display: flex;
+        overflow-x: auto;
+        padding: 10px;
+    }
+    
+    .nav-sidebar li {
+        padding: 10px 15px;
+        white-space: nowrap;
+    }
+
+    .top-bar {
+        padding: 15px 20px;
+    }
+    
+    .white-container {
+        padding: 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* --- RESPONSIVE --- */
+@media (max-width: 900px) {
+    .container { flex-direction: column; }
+    .nav-sidebar { width: 100%; height: auto; min-height: auto; }
+    .nav-sidebar ul { display: flex; flex-wrap: wrap; justify-content: center; }
+    .alert-msg { width: 90%; margin: 20px auto; }
+}
+
+@media (max-width: 600px) {
+    .hero { margin-top: 10px; }
+    .cards-row, .bottom-actions { flex-direction: column; }
+    .hero-img { width: 100px; }
+    .white-box { padding: 25px; }
+}

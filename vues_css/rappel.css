@@ -1,0 +1,196 @@
+/* --- CONFIG GENERALE --- */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #F9E3F3;
+    color: #6E3D87;
+    overflow-x: hidden;
+}
+
+/* --- HEADER --- */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+}
+.logo { font-size: 26px; font-weight: 700; display: flex; align-items: center; gap: 10px; }
+.logo span span { color: #E170A8; }
+.logo-heart { /* Style pour l'image du coeur */
+    width: 150px; 
+    height: auto;
+}
+.user { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 1.2rem; }
+.user i { font-size: 35px; color: #9B6BB3; }
+
+/* --- LAYOUT --- */
+.container { display: flex; padding: 0 25px 25px; gap: 30px; }
+
+/* --- SIDEBAR --- */
+.nav-sidebar {
+    width: 230px;
+    background: white;
+    border-radius: 35px;
+    padding: 30px 0;
+    height: 550px;
+}
+.nav-sidebar ul { list-style: none; padding: 0; }
+.nav-sidebar li {
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #6E3D87;
+}
+/* Icônes roses */
+.nav-sidebar li i { color: #E170A8; font-size: 1.1rem; width: 25px; }
+
+.nav-sidebar li.active {
+    background: #A776BF;
+    color: white;
+    border-radius: 0 30px 30px 0;
+    margin-right: 20px;
+}
+.nav-sidebar li.active i { color: white; }
+
+
+/* --- LAYOUT RAPPELS --- */
+.rappels-container {
+    display: flex;
+    gap: 20px;
+    height: 100%;
+}
+
+.rappels-left {
+    flex: 1;
+    background: #F3E5F5; /* Violet très clair comme la maquette */
+    border-radius: 30px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.rappels-right {
+    flex: 1.2;
+    background: white;
+    border-radius: 30px;
+    padding: 40px 20px;
+}
+
+/* --- COLONNE GAUCHE --- */
+.title-header { display: flex; align-items: center; gap: 15px; margin-bottom: 10px; }
+.bell-icon { font-size: 28px; color: #E170A8; }
+.title-header h2 { margin: 0; font-size: 22px; color: #6E3D87; }
+.title-header p { margin: 0; font-weight: 600; }
+
+.reminder-item {
+    background: white;
+    padding: 15px;
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.reminder-item strong { display: block; color: #6E3D87; font-size: 18px; }
+.reminder-item span { color: #888; font-size: 14px; font-weight: 600; }
+
+.add-reminder-box {
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: auto;
+}
+.add-reminder-box p { margin: 0 0 10px 0; color: #888; }
+.add-reminder-box input {
+    width: 100%;
+    border: none;
+    padding: 10px 0;
+    font-family: inherit;
+    font-size: 16px;
+    outline: none;
+    margin-bottom: 20px;
+}
+.btn-save-reminder {
+    background: #E170A8;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 12px;
+    border-radius: 15px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* --- TIMELINE (COLONNE DROITE) --- */
+.timeline {
+    position: relative;
+    padding-left: 120px; /* Espace pour les dates à gauche */
+}
+
+.timeline-line {
+    position: absolute;
+    left: 135px; /* Aligné avec les cercles */
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background-color: #E170A8;
+    border-radius: 2px;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.timeline-item .date {
+    position: absolute;
+    left: -110px;
+    font-weight: 700;
+    font-size: 14px;
+    color: #333;
+}
+
+.marker {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    border: 2px solid white;
+    color: white;
+    font-size: 12px;
+}
+
+/* Couleurs des statuts */
+.status-done { background-color: #82CBB2; }    /* Vert */
+.status-missed { background-color: #D64545; }  /* Rouge */
+.status-upcoming { background-color: #F4A261; } /* Orange */
+
+.event-details { padding-left: 25px; }
+.event-details strong { display: block; font-size: 16px; margin-bottom: 5px; }
+
+/* Badges */
+.badge {
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 700;
+}
+.badge-done { background: #D1EBE3; color: #4B967D; }
+.badge-missed { background: #F5D5D5; color: #B33A3A; }
+.badge-upcoming { background: #FDEBD0; color: #B07A2E; }
+
+/* --- RESPONSIVE --- */
+@media (max-width: 900px) {
+    .rappels-container { flex-direction: column; }
+    .timeline { padding-left: 80px; }
+    .timeline-item .date { left: -80px; font-size: 12px; }
+    .timeline-line { left: 15px; } /* Ajustement mobile */
+}
